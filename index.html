@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="player">
+    <!-- Song cover image -->
+    <div class="cover" id="cover"></div>
+
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist Name</h3>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <input type="range" id="progress" value="0">
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev"><i class="fas fa-backward"></i></button>
+      <button id="play"><i class="fas fa-play"></i></button>
+      <button id="next"><i class="fas fa-forward"></i></button>
+    </div>
+
+    <!-- Volume Control -->
+    <div class="volume-container">
+      <label>Adjust Volume</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01">
+    </div>
+
+    <!-- Duration -->
+    <p id="duration">0:00 / 0:00</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
